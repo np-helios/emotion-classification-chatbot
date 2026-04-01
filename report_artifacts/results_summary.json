@@ -1,0 +1,53 @@
+{
+  "dataset_source": "Kaggle mirror of dair-ai/emotion",
+  "train_samples": 7000,
+  "val_samples": 1500,
+  "test_samples": 1500,
+  "results": [
+    {
+      "method": "Linear SVM + TF-IDF",
+      "features": "TF-IDF",
+      "accuracy": 0.952,
+      "precision_macro": 0.8801,
+      "recall_macro": 0.88,
+      "f1_macro": 0.8794,
+      "sensitivity": 0.88,
+      "specificity": 0.97,
+      "fpr": 0.03,
+      "fnr": 0.12,
+      "npv": 0.9702,
+      "fdr": 0.1199,
+      "mcc": 0.8499
+    },
+    {
+      "method": "Logistic Regression + TF-IDF",
+      "features": "TF-IDF",
+      "accuracy": 0.9416,
+      "precision_macro": 0.8542,
+      "recall_macro": 0.854,
+      "f1_macro": 0.8533,
+      "sensitivity": 0.854,
+      "specificity": 0.9635,
+      "fpr": 0.0365,
+      "fnr": 0.146,
+      "npv": 0.9637,
+      "fdr": 0.1458,
+      "mcc": 0.8175
+    },
+    {
+      "method": "Naive Bayes + BoW",
+      "features": "BoW",
+      "accuracy": 0.9155,
+      "precision_macro": 0.7885,
+      "recall_macro": 0.7887,
+      "f1_macro": 0.7882,
+      "sensitivity": 0.7887,
+      "specificity": 0.9472,
+      "fpr": 0.0528,
+      "fnr": 0.2113,
+      "npv": 0.9473,
+      "fdr": 0.2115,
+      "mcc": 0.7357
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+method,trial,params,val_f1
+Linear SVM + TF-IDF,1,"{""C"": 1.0, ""max_features"": 40000, ""max_iter"": 4000, ""min_df"": 2, ""ngram_range"": [1, 2], ""sublinear_tf"": true}",0.854855
+Linear SVM + TF-IDF,2,"{""C"": 2.0, ""max_features"": 50000, ""max_iter"": 5000, ""min_df"": 1, ""ngram_range"": [1, 2], ""sublinear_tf"": true}",0.852833
+Linear SVM + TF-IDF,3,"{""C"": 1.5, ""max_features"": 60000, ""max_iter"": 5000, ""min_df"": 2, ""ngram_range"": [1, 3], ""sublinear_tf"": true}",0.851603
+Linear SVM + TF-IDF,4,"{""C"": 0.75, ""max_features"": 30000, ""max_iter"": 4000, ""min_df"": 3, ""ngram_range"": [1, 2], ""sublinear_tf"": true}",0.844677
+Logistic Regression + TF-IDF,1,"{""C"": 2.0, ""max_features"": 40000, ""max_iter"": 400, ""min_df"": 2, ""ngram_range"": [1, 2], ""sublinear_tf"": true}",0.831077
+Logistic Regression + TF-IDF,2,"{""C"": 4.0, ""max_features"": 50000, ""max_iter"": 500, ""min_df"": 1, ""ngram_range"": [1, 2], ""sublinear_tf"": true}",0.824825
+Logistic Regression + TF-IDF,3,"{""C"": 3.0, ""max_features"": 60000, ""max_iter"": 600, ""min_df"": 2, ""ngram_range"": [1, 3], ""sublinear_tf"": true}",0.825228
+Logistic Regression + TF-IDF,4,"{""C"": 1.0, ""max_features"": 30000, ""max_iter"": 400, ""min_df"": 3, ""ngram_range"": [1, 2], ""sublinear_tf"": true}",0.814409
+Naive Bayes + BoW,1,"{""alpha"": 0.3, ""max_features"": 20000, ""min_df"": 1, ""ngram_range"": [1, 1]}",0.719734
+Naive Bayes + BoW,2,"{""alpha"": 0.5, ""max_features"": 30000, ""min_df"": 2, ""ngram_range"": [1, 2]}",0.757245
+Naive Bayes + BoW,3,"{""alpha"": 0.8, ""max_features"": 40000, ""min_df"": 1, ""ngram_range"": [1, 2]}",0.74818
+Naive Bayes + BoW,4,"{""alpha"": 1.0, ""max_features"": 50000, ""min_df"": 2, ""ngram_range"": [1, 3]}",0.733715

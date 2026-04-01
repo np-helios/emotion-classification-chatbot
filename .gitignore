@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+
+# Large/raw dataset artifacts
+kaggle_emotion/merged_training.pkl
+
+# Local output noise
+.pytest_cache/

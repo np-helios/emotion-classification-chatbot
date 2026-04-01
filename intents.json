@@ -1,0 +1,188 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey chatbot",
+        "good morning",
+        "good evening"
+      ],
+      "responses": [
+        "Hello! I can explain NLP concepts and AI applications.",
+        "Hi there! Ask me about NLP, machine learning, or AI use cases."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "exit",
+        "quit"
+      ],
+      "responses": [
+        "Goodbye! Keep exploring NLP and AI.",
+        "See you later. All the best with your project."
+      ]
+    },
+    {
+      "tag": "about_nlp",
+      "patterns": [
+        "what is nlp",
+        "define natural language processing",
+        "explain nlp",
+        "meaning of nlp"
+      ],
+      "responses": [
+        "NLP stands for Natural Language Processing. It helps computers understand, analyze, and generate human language.",
+        "Natural Language Processing is a branch of AI that works with text and speech so machines can interact with human language."
+      ]
+    },
+    {
+      "tag": "tokenization",
+      "patterns": [
+        "what is tokenization",
+        "explain tokenization in nlp",
+        "meaning of tokens",
+        "how does tokenization work"
+      ],
+      "responses": [
+        "Tokenization is the process of splitting text into smaller units such as words or sentences. These units are called tokens.",
+        "In NLP, tokenization breaks text into manageable pieces so later steps like analysis and classification become easier."
+      ]
+    },
+    {
+      "tag": "stemming",
+      "patterns": [
+        "what is stemming",
+        "explain stemming",
+        "stem words in nlp",
+        "meaning of stemming"
+      ],
+      "responses": [
+        "Stemming reduces words to a root form. For example, 'playing', 'played', and 'plays' may be reduced to 'play'.",
+        "Stemming removes word endings to bring similar words to a common base form."
+      ]
+    },
+    {
+      "tag": "lemmatization",
+      "patterns": [
+        "what is lemmatization",
+        "define lemmatization",
+        "lemmatization in nlp",
+        "difference between lemma and word"
+      ],
+      "responses": [
+        "Lemmatization converts a word to its meaningful base form using vocabulary knowledge. For example, 'better' becomes 'good'.",
+        "Lemmatization finds the dictionary form of a word, which is often more accurate than simple stemming."
+      ]
+    },
+    {
+      "tag": "stopwords",
+      "patterns": [
+        "what are stopwords",
+        "why remove stop words",
+        "stopwords in nlp",
+        "explain stop word removal"
+      ],
+      "responses": [
+        "Stopwords are very common words like 'the', 'is', and 'and'. They are often removed because they carry little meaning in many NLP tasks.",
+        "Stopword removal helps focus on more informative words during preprocessing."
+      ]
+    },
+    {
+      "tag": "sentiment_analysis",
+      "patterns": [
+        "what is sentiment analysis",
+        "explain sentiment analysis",
+        "how do we detect opinion in text",
+        "meaning of sentiment classification"
+      ],
+      "responses": [
+        "Sentiment analysis identifies whether text expresses a positive, negative, or neutral opinion.",
+        "Sentiment analysis is an NLP task used to understand emotions or opinions in reviews, tweets, and feedback."
+      ]
+    },
+    {
+      "tag": "chatbot_definition",
+      "patterns": [
+        "what is a chatbot",
+        "define chatbot",
+        "how chatbots work",
+        "explain intent based chatbot"
+      ],
+      "responses": [
+        "A chatbot is a software program that interacts with users through text or speech. An intent-based chatbot maps user queries to predefined intents and replies.",
+        "An intent-based chatbot first identifies the user's purpose, called an intent, and then returns a suitable response."
+      ]
+    },
+    {
+      "tag": "ai_in_healthcare",
+      "patterns": [
+        "ai applications in healthcare",
+        "how is ai used in hospitals",
+        "ai in medicine",
+        "uses of ai in healthcare"
+      ],
+      "responses": [
+        "AI is used in healthcare for disease prediction, medical image analysis, virtual assistants, and personalized treatment recommendations.",
+        "Healthcare uses AI for diagnosis support, report analysis, patient monitoring, and drug discovery."
+      ]
+    },
+    {
+      "tag": "ai_in_education",
+      "patterns": [
+        "ai applications in education",
+        "how is ai used in education",
+        "ai in learning platforms",
+        "uses of ai in education"
+      ],
+      "responses": [
+        "AI in education supports personalized learning, automated grading, recommendation systems, and intelligent tutoring systems.",
+        "Educational platforms use AI to track student progress, suggest learning resources, and answer common queries."
+      ]
+    },
+    {
+      "tag": "ai_in_business",
+      "patterns": [
+        "ai applications in business",
+        "how is ai used in business",
+        "ai use cases in companies",
+        "uses of ai in marketing and business"
+      ],
+      "responses": [
+        "Businesses use AI for customer support, demand forecasting, fraud detection, recommendation systems, and market analysis.",
+        "In business, AI helps automate repetitive tasks and improve decision-making using data."
+      ]
+    },
+    {
+      "tag": "machine_learning",
+      "patterns": [
+        "what is machine learning",
+        "define machine learning",
+        "explain ml",
+        "meaning of machine learning"
+      ],
+      "responses": [
+        "Machine learning is a branch of AI where systems learn patterns from data and improve predictions without being explicitly programmed for every rule.",
+        "Machine learning allows computers to learn from examples, such as classifying emails or recommending movies."
+      ]
+    },
+    {
+      "tag": "deep_learning",
+      "patterns": [
+        "what is deep learning",
+        "define deep learning",
+        "difference between ml and deep learning",
+        "explain deep learning"
+      ],
+      "responses": [
+        "Deep learning is a part of machine learning that uses multi-layer neural networks to learn complex patterns from large amounts of data.",
+        "Deep learning is useful for tasks like image recognition, speech recognition, and language generation."
+      ]
+    }
+  ]
+}

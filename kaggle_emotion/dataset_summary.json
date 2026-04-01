@@ -1,0 +1,36 @@
+{
+  "source_rows": 416809,
+  "balanced_rows": 10000,
+  "per_class": {
+    "happy": {
+      "total": 2000,
+      "train": 1400,
+      "val": 300,
+      "test": 300
+    },
+    "sad": {
+      "total": 2000,
+      "train": 1400,
+      "val": 300,
+      "test": 300
+    },
+    "angry": {
+      "total": 2000,
+      "train": 1400,
+      "val": 300,
+      "test": 300
+    },
+    "fear": {
+      "total": 2000,
+      "train": 1400,
+      "val": 300,
+      "test": 300
+    },
+    "surprise": {
+      "total": 2000,
+      "train": 1400,
+      "val": 300,
+      "test": 300
+    }
+  }
+}
