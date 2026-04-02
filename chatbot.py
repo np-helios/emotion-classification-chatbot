@@ -46,7 +46,7 @@ CONTRACTIONS = {
     "there's": "there is",
 }
 DOMAIN_KEYWORDS = {
-    "work": {"office", "boss", "job", "work", "career", "meeting", "deadline", "project", "interview", "team", "manager"},
+    "work": {"office", "boss", "job", "work", "career", "meeting", "deadline", "project", "interview", "team", "manager", "exam", "viva", "presentation", "submission"},
     "relationships": {"friend", "partner", "boyfriend", "girlfriend", "family", "relationship", "marriage", "love", "message", "parents"},
     "health": {"health", "doctor", "pain", "sleep", "body", "medicine", "panic", "exercise", "diet", "report", "hospital"},
     "self_esteem": {"confidence", "worth", "myself", "failure", "insecure", "future", "motivation", "enough", "ability"},
@@ -62,13 +62,13 @@ CHATBOT_HINTS = {
     "happy": {"happy", "proud", "glad", "excited", "thrilled", "joy", "smiling", "grateful"},
     "sad": {"sad", "lonely", "empty", "cry", "hurt", "hopeless", "down", "awful"},
     "angry": {"angry", "mad", "furious", "annoyed", "frustrated", "rage", "irritated"},
-    "fear": {"fear", "afraid", "scared", "worried", "anxious", "panic", "terrified", "nervous"},
+    "fear": {"fear", "afraid", "scared", "worried", "anxious", "panic", "terrified", "nervous", "viva", "exam", "unprepared", "prepared"},
     "surprise": {"wow", "surprised", "unexpected", "shocked", "sudden", "astonished"},
 }
 CHATBOT_PHRASES = {
     "angry": {"fed up", "sick of", "makes me angry", "ignored my work", "ignored my effort"},
     "surprise": {"did not expect", "out of nowhere", "caught me off guard", "what a surprise"},
-    "fear": {"scared about", "afraid of", "worried about", "panic attack"},
+    "fear": {"scared about", "afraid of", "worried about", "panic attack", "have a viva", "viva in", "not prepared", "not ready", "exam in", "deadline in"},
     "sad": {"feel lonely", "want to cry", "not good enough", "feel empty"},
 }
 
@@ -385,6 +385,12 @@ class EmotionChatbot:
         boosted = dict(probabilities)
         lowered = normalize_text(text)
         tokens = set(preprocess(text))
+
+        academic_stress = {"viva", "exam", "interview", "deadline", "submission"}
+        if tokens & academic_stress:
+            boosted["fear"] += 0.18
+            if any(phrase in lowered for phrase in {"not prepared", "not ready", "in 10 minute", "tomorrow"}):
+                boosted["fear"] += 0.12
 
         for emotion, words in CHATBOT_HINTS.items():
             overlap = len(tokens & words)
